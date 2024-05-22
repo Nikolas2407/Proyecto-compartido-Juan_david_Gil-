@@ -6,28 +6,35 @@
     <link rel="stylesheet" href="../css/style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <title>carrros
-
-    </title>
+    <title>carrros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">F
 </head>
 <body>
-    <header>
-        <img id="imgheader" src="../img/header.jpg" alt="">
+    <header style="margin-top: -20px;">
+        <img id="imgheader" src="../img/header.jpg" alt="" />
         <h1>Autos deportivos</h1>
-        
-        <nav class="navbar">
-            <ul>
-                <li class="lista"><a class="lista" href="index.html">inicio</a></li>
-                <li class="lista"><a class="lista" href="categorias.html">categorias</a></li>
-                <li class="lista"><a class="lista" href="contactanos.html">contactanos</a></li>
-            </ul>
-
+        <button class="toggle">
+          <ion-icon name="menu-outline"></ion-icon>
+      </button>
+  
+        <nav class="navbar navbar-visible">
+  
+          <ul>
+            <li class="lista"><a class="lista" href="index.html">inicio</a></li>
+            <li class="lista">
+              <a class="lista" href="categorias.html">categorias</a>
+            </li>
+            <li class="lista">
+              <a class="lista" href="contactanos.html">contactanos</a>
+            </li>
+          </ul>
         </nav>
+      </header>
         
-    </header>
-    </body>
+    <main>
 
-    <body>
        
        <div id="formulario">
         
@@ -80,7 +87,7 @@
    
 
        
-    
+    </main>
 <footer>
     <div >
         <ion-icon class="iconos"  name="logo-facebook">facebook</ion-icon>
@@ -89,4 +96,7 @@
 
     </div>
 </footer>
+
+<script src="../css/index.js"></script>
+</body>
 </html>
