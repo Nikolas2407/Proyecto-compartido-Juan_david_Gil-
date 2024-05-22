@@ -109,13 +109,13 @@ h1 {
 
 .container img {
     padding: 20px;
-    width: 500px;
+    width: 60%;
     border-radius: 50px;
     transition: .3s;
 }
 
 .container img:hover {
-    width: 600px;
+    width: 70%;
 }
 
 h2 {
@@ -285,7 +285,7 @@ footer {
 }
 
 /* Dispositivos pequeños moviles (phones, 600px and down) */
-@media (max-width:576px) {
+@media (max-width:820px) {
     .cards {
         width: 100%;
         display: grid;
@@ -359,7 +359,7 @@ header h1{
 
 }
 
-@media (min-width:576px) and (max-width:820px) {
+@media (min-width:600px) and (max-width:820px) {
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
