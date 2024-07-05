@@ -15,11 +15,24 @@
   <title>carros</title>
   <script src="../js/jquery.js"></script>
   <script>
-    $(document).ready(function () {
-      $(".boton").click(function(){
-        $("#imagen").fadeToggle(500)
-      })
-    })
+    const toggle = document.querySelector(".toggle")
+const navbar = document.querySelector(".navbar")
+$(document).ready(function(){
+  $(".toggle").click(function(){
+    $(".navbar").toggleClass("navbar_visible")
+  })
+  $(".imagen").hide()
+  $(".boton").click(function(){
+    $(".imagen").fadeIn(500)
+  })
+    
+  
+})
+function azul(){
+  document.getElementById("azul").style.backgroundColor = "blue";
+}
+
+
   </script>
 </head>
 
@@ -32,7 +45,7 @@
         <ion-icon name="menu-outline"></ion-icon>
       </button>
 
-      <nav class="navbar navbar-visible">
+      <nav class="navbar navbar_visible">
 
         <ul>
           <li class="lista"><a class="lista" href="index.html">inicio</a></li>
@@ -48,7 +61,7 @@
 
 
 
-    <div class="container">
+    <div class="container" onclick="azul()" id="azul">
       <h2>¿Que es un auto deportivo?</h2>
       <p>Un deportivo es, por lo general, un coche pequeño y bajo para dos pasajeros que ofrece una respuesta rápida,
         puede circular a altas velocidades y está diseñado para ser conducido en la vía pública. Suelen estar asociados
@@ -78,7 +91,7 @@
       </div>
     </footer>
   </main>
-  <script src="../css/scripts.js"></script>
+
 
 </body>
 
